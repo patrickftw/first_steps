@@ -2,8 +2,8 @@ def view():
     pass
 
 def add():
-    name = input('Nazwa uzytkownika: ')
-    pwd = input('Haslo: ')
+    name = input('Account name: ')
+    pwd = input('Password: ')
 
     file = open('passwords.txt', 'a')
     file.write(name + "|" + pwd)
