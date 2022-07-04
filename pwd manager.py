@@ -5,8 +5,9 @@ def add():
     name = input('Nazwa uzytkownika: ')
     pwd = input('Haslo: ')
 
-    with open('passwords.txt', 'a') as file:
-        file.write(name + "|" + pwd + '\n')
+    file = open('passwords.txt', 'a')
+    file.write(name + "|" + pwd)
+    file.close()
 
 
 while True:
